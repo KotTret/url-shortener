@@ -1,7 +1,14 @@
 package main
 
+import (
+	"fmt"
+	"url-shortener/internal/config"
+)
+
 func main() {
-	// TODO: init config: cleaneny
+	// TODO: init config: cleanenv
+	cfg := config.MustLoad()
+	fmt.Println(cfg)
 
 	// TODO: init logger: slog
 
@@ -9,6 +16,6 @@ func main() {
 
 	// TODO: init router: chi
 
-	// TODO: run rserver
+	// TODO: run server
 
 }
